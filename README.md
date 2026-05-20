@@ -98,7 +98,7 @@ openpyxl      # reading client Excel files
 ## 📈 Charts
 
 ### Monthly Revenue + MoM Growth
-![image]([charts/chart1_monthly_revenue.png](https://github.com/triciaq/mane_society/blob/3b0a8f0579de61fd800ef865bc1e8a1314ea5417/mane1.png))
+![image alt]([charts/chart1_monthly_revenue.png](https://github.com/triciaq/mane_society/blob/3b0a8f0579de61fd800ef865bc1e8a1314ea5417/mane1.png))
 
 ### Channel Mix — Revenue vs Discount Rate vs Retention
 ![Channel Mix](charts/chart2_channel_mix.png)
