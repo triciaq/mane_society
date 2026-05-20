@@ -101,16 +101,16 @@ openpyxl      # reading client Excel files
 <img width="674" height="287" alt="Image" src="https://github.com/user-attachments/assets/8158cc2e-e9e7-42c9-b1ed-048dc3dc548d" />
 
 ### Channel Mix — Revenue vs Discount Rate vs Retention
-![Channel Mix](charts/chart2_channel_mix.png)
+<img width="458" height="214" alt="Image" src="https://github.com/user-attachments/assets/f40bb35f-feee-46f3-a801-2789836bd9c4" />
 
 ### The Attribution Gap — True CAC vs Platform CAC
-![CAC Gap](charts/chart3_cac_gap.png)
+<img width="677" height="266" alt="Image" src="https://github.com/user-attachments/assets/42b9e4da-6399-4b0f-906d-22e14e09dc16" />
 
 ### Cohort Retention Heatmap
-![Cohort Heatmap](charts/chart4_cohort_heatmap.png)
+<img width="673" height="380" alt="Image" src="https://github.com/user-attachments/assets/defcd101-fbf1-4bbd-95e4-3da0fce661c0" />
 
 ### Profitability Waterfall
-![Waterfall](charts/chart5_waterfall.png)
+<img width="673" height="335" alt="Image" src="https://github.com/user-attachments/assets/07655410-5f45-4dca-bb9f-25464e5fb859" />
 
 ---
 
