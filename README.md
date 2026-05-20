@@ -100,7 +100,7 @@ openpyxl      # reading client Excel files
 ### Monthly Revenue + MoM Growth
 <img width="674" height="287" alt="Image" src="https://github.com/user-attachments/assets/8158cc2e-e9e7-42c9-b1ed-048dc3dc548d" />
 
-### Channel Mix — Revenue vs Discount Rate vs Retention
+### Channel Mix — Discount Rate vs Retention
 <img width="458" height="214" alt="Image" src="https://github.com/user-attachments/assets/f40bb35f-feee-46f3-a801-2789836bd9c4" />
 
 ### The Attribution Gap — True CAC vs Platform CAC
