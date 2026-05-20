@@ -13,47 +13,7 @@ This project answers one question:
 
 > **Why does ROAS look healthy when the business is losing money?**
 
-The answer — exposed through Python-based analysis of 1,200 orders, 84 ad campaigns, and 1,191 customer records — is a 28× gap between platform-reported CAC and true acquisition cost, compounded by near-zero customer retention across all channels.
-
----
-
-## 📂 Repository Structure
-
-```
-mane-society-analytics/
-│
-├── data/
-│   ├── 01_ManeSociety_Raw_Orders.xlsx        # 1,200 orders · full year 2023
-│   ├── 02_ManeSociety_Ad_Spend.xlsx          # Meta + TikTok · 7 campaigns · 12 months
-│   └── 03_ManeSociety_Customer_Table.xlsx    # 1,191 customers · LTV segments
-│
-├── mane_society_analysis.ipynb               # Main analysis notebook
-│
-├── charts/
-│   ├── chart1_monthly_revenue.png
-│   ├── chart2_channel_mix.png
-│   ├── chart3_cac_gap.png
-│   ├── chart4_cohort_heatmap.png
-│   └── chart5_waterfall.png
-│
-└── README.md
-```
-
----
-
-## 🔍 Analysis Pipeline
-
-The notebook is structured as a sequential story — each section builds on the last.
-
-| Section | Question Asked | Method |
-|---|---|---|
-| 01 · Monthly Revenue | Is revenue growing and how stable is it? | Time series aggregation, MoM growth, rolling averages |
-| 02 · Channel Mix | Where do orders and revenue come from? | Grouped aggregation, revenue share, discount rate by channel |
-| 03 · True CAC vs Platform CAC | How much does a customer actually cost? | Order-level new customer count vs platform attribution |
-| 04 · Cohort Retention | Do customers come back? | Cohort pivot table, retention heatmap |
-| 05 · Profitability | Is the business actually making money? | P&L build, contribution margin, waterfall chart |
-| 06 · Scenario Modelling | What needs to change to reach break even? | Four scenarios modelled with assumption documentation |
-| 07 · Recommendations | What do we tell the client? | Prioritised actions with KPIs and expected impact |
+The answer exposed through Python-based analysis of 1,200 orders, 84 ad campaigns, and 1,191 customer records is a 28× gap between platform-reported CAC and true acquisition cost, compounded by near-zero customer retention across all channels.
 
 ---
 
@@ -67,7 +27,7 @@ The notebook is structured as a sequential story — each section builds on the 
 | Gap | — | **28× underreported** |
 | Months flagged | — | **24 of 24** |
 
-Meta and TikTok claimed to acquire customers for $12.89 each. True CAC — calculated by dividing actual spend by verified first-time buyers in the order database — was $361.31. Every single month of the year was flagged as misleading.
+Meta and TikTok claimed to acquire customers for $12.89 each. True CAC was $361.31. Every single month of the year was flagged as misleading.
 
 ### Finding 2 — Retention Crisis
 
@@ -100,7 +60,7 @@ Ad spend alone exceeded gross profit by $209,767. The business was spending $3.2
 | C — Full fix | $176,283 | -163.6% | $249,547 |
 | **D — 80% cut + retention** | **$50,366** | **-25.7%** | **$39,317** |
 
-Scenario D — cutting paid social by 80% and investing $10,800 in email infrastructure — reduces the break even gap by 90%. That remaining $39,317 gap closes with retention alone within approximately 7 months.
+Scenario D — cutting paid social by 80% and investing $10,800 in email infrastructure reduces the break even gap by 90%. That remaining $39,317 gap closes with retention alone within approximately 7 months.
 
 ---
 
@@ -131,7 +91,7 @@ matplotlib    # all charts — no Seaborn, no Plotly
 openpyxl      # reading client Excel files
 ```
 
-No dashboarding tools. No BI platforms. Pure Python — because the analysis runs anywhere a client can share a CSV.
+
 
 ---
 
@@ -164,30 +124,5 @@ No dashboarding tools. No BI platforms. Pure Python — because the analysis run
 - **LTV:CAC ratio** — unit economics framing for channel efficiency
 - **Demand cannibalization** — identifying promotional pull-forward in time series
 
----
 
-## 🌍 Context & Applicability
 
-This analysis was built to mirror the real data environment of a DTC brand analyst working remotely with a Shopify-based client:
-
-- Data sourced from Shopify Orders export + Meta Ads Manager CSV + customer table
-- No direct API access assumed — works entirely from standard client file exports
-- Deliverable designed for a non-technical founder audience
-- All assumptions documented and challengeable
-
-The same notebook structure applies directly to any DTC brand on Shopify with paid social spend — beauty, wellness, apparel, food & beverage.
-
----
-
-## 👤 About
-
-**Patricia Naggayi** — Data Analyst specialising in ecommerce analytics for DTC brands.
-
-Focused on the $200K–$2M revenue stage where the gap between platform-reported metrics and business reality is widest — and where getting the analysis right changes the trajectory of the business.
-
-📧 patricianaggayi9@gmail.com  
-🔗 [linkedin.com/in/patricia-naggayi-277822204](https://linkedin.com/in/patricia-naggayi-277822204)
-
----
-
-*Built with Python · Jupyter Notebook · Real client data simulation · No BI tools required*
